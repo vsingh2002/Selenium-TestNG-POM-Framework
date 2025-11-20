@@ -19,7 +19,7 @@ This framework includes :
 
 **•** Maven dependency management
 
-Application under test:
+Application under test :
 
 https://demowebshop.tricentis.com/
 
