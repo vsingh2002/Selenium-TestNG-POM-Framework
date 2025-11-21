@@ -1,0 +1,12 @@
+2025-11-21 13:04:20 [main] INFO  Log - Launch the browser
+2025-11-21 13:04:54 [main] INFO  Log - Maximizing the browser
+2025-11-21 13:04:55 [main] INFO  Log - Implementing implicitwait
+2025-11-21 13:04:56 [main] INFO  Log - Navigating to test url
+2025-11-21 13:05:12 [main] INFO  Log - Starting login test
+2025-11-21 13:05:12 [main] INFO  Log - Adding credentials
+2025-11-21 13:05:12 [main] INFO  Log - Clicking the login link
+2025-11-21 13:05:19 [main] INFO  Log - Enterning the emailid
+2025-11-21 13:05:20 [main] INFO  Log - Entering the password
+2025-11-21 13:05:20 [main] INFO  Log - Clicking login button
+2025-11-21 13:05:23 [main] INFO  Log - Verifying the title
+2025-11-21 13:05:23 [main] INFO  Log - Closing the browser
