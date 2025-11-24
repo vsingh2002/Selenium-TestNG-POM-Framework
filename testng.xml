@@ -1,5 +1,7 @@
 <suite name="LoginSuite">
 	<test name="LoginTests">
+		<!--<parameter name="email" value="rahul@mailinator.com"/> -->
+		<!-- <parameter name="password" value="password123"/>-->
 		<classes>
 			<class name="tests.LoginTest" />
 		</classes>

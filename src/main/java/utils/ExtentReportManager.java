@@ -37,21 +37,46 @@ public class ExtentReportManager {
 
 	}
 
+//	public static String captureScreenshot(WebDriver driver, String screenshotName) {
+//		try {
+//			File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+//		//	String path = "screenshots/" + screenshotName + ".png";
+//			String path= System.getProperty("user.dir")+ "/screenshots/"+screenshotName+".png";
+//
+//			FileUtils.copyFile(src, new File(path));
+//			return path;
+//
+//		} catch (Exception e) {
+//			e.printStackTrace();
+//
+//		}
+//		return null;
+//
+//	}
+//
+//}
 	public static String captureScreenshot(WebDriver driver, String screenshotName) {
 		try {
-			File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		//	String path = "screenshots/" + screenshotName + ".png";
-			String path= System.getProperty("user.dir")+ "/screenshots/"+screenshotName+".png";
+			// Create unique timestamp
+			String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
 
+			// Final unique filename
+			String finalScreenshotName = screenshotName + "_" + timeStamp + ".png";
+
+			// Path
+			String path = System.getProperty("user.dir") + "/screenshots/" + finalScreenshotName;
+
+			// Capture file
+			File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+
+			// Save file
 			FileUtils.copyFile(src, new File(path));
+
 			return path;
 
 		} catch (Exception e) {
 			e.printStackTrace();
-
 		}
 		return null;
-
 	}
-
 }
